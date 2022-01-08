@@ -1,0 +1,57 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+2022-01-08 20:58:01.785  INFO 1 --- [           main] M.m.h.HangmanServiceApplication          : Starting HangmanServiceApplication v0.0.1-SNAPSHOT using Java 11.0.13 on 4c114e764b6b with PID 1 (/usr/app/hangman-service.jar started by root in /usr/app)
+2022-01-08 20:58:01.793  INFO 1 --- [           main] M.m.h.HangmanServiceApplication          : No active profile set, falling back to default profiles: default
+2022-01-08 20:58:04.609  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-01-08 20:58:04.646  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-08 20:58:04.646  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-08 20:58:04.805  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-08 20:58:04.806  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2804 ms
+2022-01-08 20:58:05.749  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2022-01-08 20:58:05.783  INFO 1 --- [           main] M.m.h.HangmanServiceApplication          : Started HangmanServiceApplication in 5.229 seconds (JVM running for 7.785)
+2022-01-08 20:59:32.664  INFO 1 --- [nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 20:59:32.665  INFO 1 --- [nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-08 20:59:32.668  INFO 1 --- [nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-01-08 20:59:32.728  INFO 1 --- [nio-9000-exec-1] M.m.hangmanservice.Controller            : --- New call to route: /newgame
+2022-01-08 20:59:32.863  INFO 1 --- [nio-9000-exec-1] M.m.hangmanservice.LazySingleton         : Initializing game
+2022-01-08 20:59:32.863  INFO 1 --- [nio-9000-exec-1] M.m.hangmanservice.LazySingleton         : Spawning new body
+2022-01-08 20:59:32.864  INFO 1 --- [nio-9000-exec-1] M.m.hangmanservice.LazySingleton         : Requesting word from dictionary-service ...
+2022-01-08 20:59:33.773  INFO 1 --- [nio-9000-exec-1] M.m.hangmanservice.LazySingleton         : ... dictionary-service replied with: remunerate
+2022-01-08 20:59:41.925  INFO 1 --- [nio-9000-exec-2] M.m.hangmanservice.Controller            : --- New call to route: /guess/a
+2022-01-08 20:59:41.931  INFO 1 --- [nio-9000-exec-2] M.m.hangmanservice.LazySingleton         : guess (a) IS IN word (remunerate)
+2022-01-08 20:59:46.407  INFO 1 --- [nio-9000-exec-3] M.m.hangmanservice.Controller            : --- New call to route: /guess/i
+2022-01-08 20:59:46.408  INFO 1 --- [nio-9000-exec-3] M.m.hangmanservice.LazySingleton         : guess (i) IS NOT IN word (remunerate)
+2022-01-08 20:59:46.408  INFO 1 --- [nio-9000-exec-3] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 20:59:46.955  INFO 1 --- [nio-9000-exec-3] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 20:59:50.903  INFO 1 --- [nio-9000-exec-4] M.m.hangmanservice.Controller            : --- New call to route: /guess/e
+2022-01-08 20:59:50.904  INFO 1 --- [nio-9000-exec-4] M.m.hangmanservice.LazySingleton         : guess (e) IS IN word (remunerate)
+2022-01-08 21:00:03.853  INFO 1 --- [nio-9000-exec-5] M.m.hangmanservice.Controller            : --- New call to route: /guess/n
+2022-01-08 21:00:03.854  INFO 1 --- [nio-9000-exec-5] M.m.hangmanservice.LazySingleton         : guess (n) IS IN word (remunerate)
+2022-01-08 21:00:08.492  INFO 1 --- [nio-9000-exec-6] M.m.hangmanservice.Controller            : --- New call to route: /guess/p
+2022-01-08 21:00:08.493  INFO 1 --- [nio-9000-exec-6] M.m.hangmanservice.LazySingleton         : guess (p) IS NOT IN word (remunerate)
+2022-01-08 21:00:08.493  INFO 1 --- [nio-9000-exec-6] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 21:00:08.521  INFO 1 --- [nio-9000-exec-6] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 21:00:12.779  INFO 1 --- [nio-9000-exec-7] M.m.hangmanservice.Controller            : --- New call to route: /guess/o
+2022-01-08 21:00:12.780  INFO 1 --- [nio-9000-exec-7] M.m.hangmanservice.LazySingleton         : guess (o) IS NOT IN word (remunerate)
+2022-01-08 21:00:12.781  INFO 1 --- [nio-9000-exec-7] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 21:00:12.819  INFO 1 --- [nio-9000-exec-7] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 21:00:18.973  INFO 1 --- [nio-9000-exec-8] M.m.hangmanservice.Controller            : --- New call to route: /guess/l
+2022-01-08 21:00:18.974  INFO 1 --- [nio-9000-exec-8] M.m.hangmanservice.LazySingleton         : guess (l) IS NOT IN word (remunerate)
+2022-01-08 21:00:18.974  INFO 1 --- [nio-9000-exec-8] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 21:00:19.005  INFO 1 --- [nio-9000-exec-8] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 21:00:24.977  INFO 1 --- [nio-9000-exec-9] M.m.hangmanservice.Controller            : --- New call to route: /guess/f
+2022-01-08 21:00:24.978  INFO 1 --- [nio-9000-exec-9] M.m.hangmanservice.LazySingleton         : guess (f) IS NOT IN word (remunerate)
+2022-01-08 21:00:24.978  INFO 1 --- [nio-9000-exec-9] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 21:00:25.011  INFO 1 --- [nio-9000-exec-9] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 21:00:32.430  INFO 1 --- [io-9000-exec-10] M.m.hangmanservice.Controller            : --- New call to route: /guess/g
+2022-01-08 21:00:32.431  INFO 1 --- [io-9000-exec-10] M.m.hangmanservice.LazySingleton         : guess (g) IS NOT IN word (remunerate)
+2022-01-08 21:00:32.431  INFO 1 --- [io-9000-exec-10] M.m.hangmanservice.LazySingleton         : Send victim to hang-service ...
+2022-01-08 21:00:32.451  INFO 1 --- [io-9000-exec-10] M.m.hangmanservice.LazySingleton         : ... parts of victim got hanged.
+2022-01-08 21:00:32.452  INFO 1 --- [io-9000-exec-10] M.m.hangmanservice.LazySingleton         : Complete victim has been hung up.

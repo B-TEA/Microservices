@@ -1,0 +1,23 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+2022-01-08 20:57:48.976  INFO 1 --- [           main] M.m.d.DictionaryServiceApplication       : Starting DictionaryServiceApplication v0.0.1-SNAPSHOT using Java 11.0.13 on 9512a6fb46db with PID 1 (/usr/app/dictionary-service.jar started by root in /usr/app)
+2022-01-08 20:57:48.980  INFO 1 --- [           main] M.m.d.DictionaryServiceApplication       : No active profile set, falling back to default profiles: default
+2022-01-08 20:57:50.551  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-01-08 20:57:50.574  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-08 20:57:50.574  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-08 20:57:50.671  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-08 20:57:50.672  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1577 ms
+2022-01-08 20:57:51.443  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2022-01-08 20:57:51.472  INFO 1 --- [           main] M.m.d.DictionaryServiceApplication       : Started DictionaryServiceApplication in 3.147 seconds (JVM running for 4.74)
+2022-01-08 20:59:33.257  INFO 1 --- [nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 20:59:33.258  INFO 1 --- [nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-08 20:59:33.265  INFO 1 --- [nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-01-08 20:59:33.340  INFO 1 --- [nio-9000-exec-1] M.m.dictionaryservice.Controller         : --- New call to route: /getword
+2022-01-08 20:59:33.490  INFO 1 --- [nio-9000-exec-1] M.m.dictionaryservice.Controller         : Responding with word: remunerate
